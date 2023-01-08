@@ -58,6 +58,8 @@ input,
 button,
 textarea {
  font-family: var(--FF);
+
+    border: .25em solid var(--FONT-COLOR);
 } 
 
 /* || VARIABLES*/
@@ -388,13 +390,13 @@ nav a:focus {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: .5em;
+  margin-top:1.8em;
   text-align: center;
 }
 
 #contact-form {
     
-    border: #000 solid 1px;
+  border: #000 solid 1px;
   box-shadow: inset 0 0 3em 2em;
   /* position: 0; */
     /* border: 1px solid red; */
@@ -406,44 +408,47 @@ nav a:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-top: 50%; */
 }
 
 #contact-form .container {
   color: var(--HEADER-COLOR);
   margin-top: 15%;
+  text-align: center;
 }
 #contact-form p {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom:1em;
 }
 #contact-form label {
-  font-size: 1.em;
+  font-size: 1.2em;
   margin-bottom:1em;
 }
 
 #contact-form input{
   margin: 1em;
   width: 90%;
-  height: 100%;
-}
-
-
-#contact-form input, #contact-form textarea{
-  border: 3px solid var(--FONT-COLOR);
+  font-weight: 600;
   background-color: var(--BGCOLOR);
   height: 3em;
   border-radius: 15px;
-  padding: 1em;
-  overflow: visible;
+  padding: .5em;
   }
+
+  #contact-form textarea{
+  background-color: var(--BGCOLOR);
+  height: 3em;
+  width: 90%;
+  border-radius: 15px;
+  padding: 3em;
+  margin: 1em;
+  }
+
  #contact-form button {
   margin: 1em;
-  /* border: 5px solid var(--FONT-COLOR); */
   background-color: var(--BGCOLOR);
   height: 3em;
   border-radius: 15px;
-  padding: 1em;
+  padding: 2em;
   overflow: visible;
  }
 /* Showcase */
