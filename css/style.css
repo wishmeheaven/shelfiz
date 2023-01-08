@@ -371,9 +371,6 @@ nav a:focus {
 .welcome-content{
   margin-top: 18vh;
 }
-.text-primary {
-    color: var(--FONT-COLOR);
-}
 .lead {
   margin-top: 2vh;
   padding: .25em;
@@ -392,8 +389,13 @@ nav a:focus {
   letter-spacing: 1px;
   margin-top:1.8em;
   text-align: center;
+  color: var(--HEADER-COLOR);
+
 }
 
+span {
+    color: var(--FONT-COLOR);
+}
 #contact-form {
     
   border: #000 solid 1px;
@@ -411,21 +413,22 @@ nav a:focus {
 }
 
 #contact-form .container {
-  color: var(--HEADER-COLOR);
+  /* color: var(--FONT-COLOR); */
   margin-top: 15%;
   text-align: center;
 }
 #contact-form p {
-  font-size: 1.5em;
-  margin-bottom:1em;
+  font-size: 1.1em;
+  margin:.3em 0;
+  color: var(--HEADER-COLOR);
 }
-#contact-form label {
-  font-size: 1.2em;
-  margin-bottom:1em;
+h4{
+  font-size: 1.3em;
+  margin-bottom: .5em;
+  font-weight: 600;
+  color: var(--HEADER-COLOR);
 }
-
 #contact-form input{
-  margin: 1em;
   width: 90%;
   font-weight: 600;
   background-color: var(--BGCOLOR);
@@ -440,17 +443,40 @@ nav a:focus {
   width: 90%;
   border-radius: 15px;
   padding: 3em;
-  margin: 1em;
   }
 
  #contact-form button {
-  margin: 1em;
+  /* margin: 1em; */
+  color: var(--FONT-COLOR);
   background-color: var(--BGCOLOR);
   height: 3em;
+  margin: 1.5em;
+  font-size: 1em;
+  border: 3px solid var(--FONT-COLOR);
   border-radius: 15px;
-  padding: 2em;
+  padding: 0em 2em;
   overflow: visible;
+  font-weight: 600;
+  cursor: pointer;
  }
+#contact-form button:hover {
+  text-decoration: none;
+  color: var(--FONT-COLOR);
+  box-shadow: inset 0 0 .7em .1em var(--FONT-COLOR);
+}
+
+#contact-form button a {
+  text-decoration: none;
+  color: var(--FONT-COLOR);
+}
+
+#contact-form button:active{
+  color:var(--BGCOLOR);
+  background: var(--FONT-COLOR);
+  box-shadow: inset 0 0 .5em .2em var(--BGCOLOR); 
+;
+}
+
 /* Showcase */
 #contact-form::after {
     height: 600px;
@@ -468,12 +494,12 @@ nav a:focus {
 
 /* || FOOTER */
 
-.footer {
-  font-size: .7em;
+.footer p {
+     font-size:.8em;
     position: fixed;
     margin: auto;
     bottom: 0;
-    background-color: var(--HEADER-BGCOLOR);
     color: var(--HEADER-COLOR);
     text-align: center;
+    z-index: 2
 } 
