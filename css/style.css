@@ -358,7 +358,7 @@ nav a:focus {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-top: 4.2em;
+  margin-top: 4.5em;
   margin-bottom: .3em;
   text-align: center;
   color: var(--HEADER-COLOR);
@@ -371,18 +371,14 @@ span {
 #contact-form {
   border: #000 solid 1px;
   box-shadow: inset 0 0 3em 2em;
-  /* position: 0; */
-    /* border: 1px solid red; */
-  text-align: start;  /* position: absolute; */
+  text-align: start;
   width: 100%;
   height: 100vh;
-  /* position: absolute; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 #contact-form .container {
   /* color: var(--FONT-COLOR); */
   margin-top: 15%;
@@ -402,7 +398,6 @@ h4{
 #contact-form div {
   margin: 1em;
 }
-
 #contact-form input{
   width: 90%;
   height: 2.5em;
@@ -463,7 +458,7 @@ h4{
 #contact-form::after {
     height: 100vh;
     background: url("../img/dice-hand_5272x3515.jpeg") no-repeat center center/cover;
-    filter: grayscale(800%) opacity(60%);
+    filter: grayscale(100%) opacity(60%);
     content: "";
     position: absolute;
     top: 0;
